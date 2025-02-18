@@ -1,3 +1,36 @@
+// Nova Seção de CTA no meio da página
+const MidCTASection = () => {
+  return (
+    <section id="mid-cta">
+      <div className="container">
+        <h2>Pronta para transformar sua vida?</h2>
+        <p>Não perca tempo e adquira o ebook que vai mudar sua história!</p>
+        <a href="#purchase" className="btn">Compre Agora</a>
+      </div>
+    </section>
+  );
+};
+
+// Composição do App
+const App = () => {
+  return (
+    <div>
+      <CountdownTimer />
+      <HeroSection />
+      <EbookSection />
+      <AboutSection />
+      <TestimonialsSection />
+      <MidCTASection /> {/* Nova seção inserida aqui */}
+      <FAQSection />
+      <CTASection />
+      <Footer />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
 // CountdownTimer.jsx
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = React.useState(86400); // 24 horas em segundos
