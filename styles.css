@@ -282,8 +282,9 @@ body {
 }
 
 /* CTA SECTION (Final) */
+/* Alterado: Novo gradiente para maior contraste */
 #cta {
-  background: linear-gradient(135deg, #ff80ab, #ff4081);
+  background: linear-gradient(135deg, #e91e63, #f44336);
   padding: 80px 0;
   text-align: center;
   color: #fff;
@@ -302,7 +303,7 @@ body {
 #cta .btn {
   display: inline-block;
   background: #fff;
-  color: #d81b60;
+  color: #e91e63;
   padding: 15px 30px;
   border-radius: 5px;
   font-size: 1.1rem;
@@ -313,7 +314,7 @@ body {
 }
 
 #cta .btn:hover {
-  background: #f8bbd0;
+  background: #ffccd5;
   transform: scale(1.05);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
@@ -324,8 +325,9 @@ body {
 }
 
 /* FOOTER */
+/* Alterado: Cor de fundo para criar contraste com o CTA final */
 footer {
-  background: #4a148c;
+  background: #212121;
   padding: 20px 0;
   text-align: center;
   color: #fff;
