@@ -284,7 +284,7 @@ body {
 /* CTA SECTION (Final) */
 /* Alterado: Novo gradiente para maior contraste */
 #cta {
-  background: linear-gradient(135deg, #e91e63, #f44336);
+  background: linear-gradient(135deg, #ff80ab, #f48fb1);
   padding: 80px 0;
   text-align: center;
   color: #fff;
