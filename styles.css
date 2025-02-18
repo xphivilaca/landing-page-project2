@@ -283,7 +283,7 @@ body {
 
 /* CTA SECTION (Final) */
 #cta {
-  background: linear-gradient(135deg, #d81b60, #ad1457);
+  background: linear-gradient(135deg, #ff80ab, #ff4081);
   padding: 80px 0;
   text-align: center;
   color: #fff;
@@ -325,7 +325,7 @@ body {
 
 /* FOOTER */
 footer {
-  background: #ad1457;
+  background: #4a148c;
   padding: 20px 0;
   text-align: center;
   color: #fff;
