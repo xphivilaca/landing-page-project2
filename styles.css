@@ -1,0 +1,337 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Contador fixo no topo */
+#contador-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#contador-fixo p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#contador-fixo #timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #333, #1e1e1e);
+  color: #fff;
+  padding: 150px 0 100px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Seção de Captura */
+#captura {
+  padding: 50px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+#captura h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#captura form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#captura input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+}
+
+/* Seção de Vídeo */
+#video {
+  padding: 50px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+}
+
+#video h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Seção de Benefícios */
+#beneficios {
+  padding: 50px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+#beneficios h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.beneficios-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.beneficio {
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 20px;
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.beneficio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Seção de Depoimentos */
+#depoimentos {
+  padding: 50px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+}
+
+#depoimentos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.depoimentos-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.depoimento {
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 20px;
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.depoimento img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.depoimento h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.depoimento p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Seção CTA */
+#cta {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.garantia {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Seção FAQ */
+#faq {
+  padding: 50px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+#faq h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.faq-item {
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 20px;
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.redes-sociais {
+  margin-top: 10px;
+}
+
+.redes-sociais a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.redes-sociais a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .beneficios-list,
+  .depoimentos-list,
+  .faq-list {
+    flex-direction: column;
+  }
+
+  .beneficio,
+  .depoimento,
+  .faq-item {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  #captura form {
+    flex-direction: column;
+  }
+
+  #captura input[type="email"] {
+    width: 100%;
+  }
+}
