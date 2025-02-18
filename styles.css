@@ -1,3 +1,42 @@
+/* MID CTA SECTION */
+#mid-cta {
+  background: linear-gradient(135deg, #ff80ab, #f48fb1);
+  padding: 60px 0;
+  text-align: center;
+  color: #fff;
+}
+
+#mid-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#mid-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+#mid-cta .btn {
+  display: inline-block;
+  background: #fff;              /* Fundo branco para destaque */
+  color: #d81b60;               /* Cor vibrante para o texto */
+  padding: 20px 40px;           /* Botão maior */
+  border-radius: 5px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 30px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#mid-cta .btn:hover {
+  background: #f8bbd0;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+
+
 /* Reset básico */
 * {
   margin: 0;
