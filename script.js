@@ -1,45 +1,11 @@
-// Nova Seção de CTA no meio da página
-const MidCTASection = () => {
-  return (
-    <section id="mid-cta">
-      <div className="container">
-        <h2>Pronta para transformar sua vida?</h2>
-        <p>Não perca tempo e adquira o ebook que vai mudar sua história!</p>
-        <a href="#purchase" className="btn">Compre Agora</a>
-      </div>
-    </section>
-  );
-};
-
-// Composição do App
-const App = () => {
-  return (
-    <div>
-      <CountdownTimer />
-      <HeroSection />
-      <EbookSection />
-      <AboutSection />
-      <TestimonialsSection />
-      <MidCTASection /> {/* Nova seção inserida aqui */}
-      <FAQSection />
-      <CTASection />
-      <Footer />
-    </div>
-  );
-};
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-
-// CountdownTimer.jsx
+// Contador de tempo (24 horas em segundos)
 const CountdownTimer = () => {
-  const [timeLeft, setTimeLeft] = React.useState(86400); // 24 horas em segundos
+  const [timeLeft, setTimeLeft] = React.useState(86400);
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setTimeLeft((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
+      setTimeLeft(prev => (prev > 0 ? prev - 1 : 0));
     }, 1000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -57,59 +23,60 @@ const CountdownTimer = () => {
   );
 };
 
-// Header.jsx
-const Header = () => {
+// Seção Hero: Introdução com imagem e chamada para ação
+const HeroSection = () => {
   return (
-    <header>
+    <section id="hero">
       <div className="container">
-        <h1>[Nome do Produto]: A solução definitiva para [problema do cliente]</h1>
-        <p>Descubra como [Nome do Produto] pode [benefício principal] em apenas [tempo].</p>
-        <a href="#cta" className="btn">Compre Agora</a>
-      </div>
-    </header>
-  );
-};
-
-// VideoSection.jsx
-const VideoSection = () => {
-  return (
-    <section id="video">
-      <div className="container">
-        <h2>Conheça o [Nome do Produto] em ação</h2>
-        <div className="video-wrapper">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <div className="hero-content">
+          <h1>Supere o Término e Redescubra sua Força</h1>
+          <p>Transforme a dor da separação em um novo começo com nosso ebook exclusivo.</p>
+          <a href="#cta" className="btn">Quero Meu Ebook</a>
+        </div>
+        <div className="hero-image">
+          <img src="https://via.placeholder.com/400x500.png?text=Capa+do+Ebook" alt="Capa do Ebook" />
         </div>
       </div>
     </section>
   );
 };
 
-// BenefitsSection.jsx
-const BenefitsSection = () => {
+// Seção do Ebook: Conteúdo e benefícios do produto
+const EbookSection = () => {
   return (
-    <section id="beneficios">
+    <section id="ebook">
       <div className="container">
-        <h2>Por que escolher [Nome do Produto]?</h2>
-        <div className="beneficios-list">
-          <div className="beneficio">
-            <h3>Benefício 1</h3>
-            <p>Descrição breve do benefício.</p>
+        <h2>O Que Você Vai Encontrar no Ebook</h2>
+        <ul className="ebook-benefits">
+          <li>Dicas práticas para superar o término</li>
+          <li>Exercícios para resgatar sua autoestima</li>
+          <li>Estratégias para um novo começo</li>
+        </ul>
+        <p>
+          Este ebook foi criado especialmente para mulheres que buscam se fortalecer e transformar a dor em poder.
+          Cada capítulo foi desenvolvido com carinho para ajudar você a reconquistar sua felicidade.
+        </p>
+      </div>
+    </section>
+  );
+};
+
+// Seção Sobre: Apresenta a autora e gera autoridade
+const AboutSection = () => {
+  return (
+    <section id="about">
+      <div className="container">
+        <h2>Sobre a Autora</h2>
+        <div className="about-content">
+          <div className="about-image">
+            <img src="https://via.placeholder.com/150.png?text=Autora" alt="Foto da Autora" />
           </div>
-          <div className="beneficio">
-            <h3>Benefício 2</h3>
-            <p>Descrição breve do benefício.</p>
-          </div>
-          <div className="beneficio">
-            <h3>Benefício 3</h3>
-            <p>Descrição breve do benefício.</p>
+          <div className="about-text">
+            <p>
+              Com anos de experiência auxiliando mulheres a superarem desafios emocionais, [Nome da Autora] compartilha
+              técnicas e insights valiosos neste ebook transformador. Descubra como resgatar sua autoconfiança e iniciar
+              uma nova fase da sua vida.
+            </p>
           </div>
         </div>
       </div>
@@ -117,27 +84,27 @@ const BenefitsSection = () => {
   );
 };
 
-// TestimonialsSection.jsx
+// Seção de Depoimentos: Prova social para reforçar a credibilidade
 const TestimonialsSection = () => {
   return (
-    <section id="depoimentos">
+    <section id="testemunhos">
       <div className="container">
-        <h2>O que estão dizendo sobre o [Nome do Produto]?</h2>
-        <div className="depoimentos-list">
-          <div className="depoimento">
-            <img src="https://via.placeholder.com/100" alt="Foto do usuário" />
-            <h3>João Silva</h3>
-            <p>"O [Nome do Produto] mudou a minha vida! Recomendo para todos que buscam [benefício]."</p>
+        <h2>O Que Elas Estão Dizendo</h2>
+        <div className="testimonials-list">
+          <div className="testimonial">
+            <img src="https://via.placeholder.com/100" alt="Juliana Andrade" />
+            <h3>Juliana Andrade</h3>
+            <p>"Este ebook me ajudou a redescobrir minha força e seguir em frente. Recomendo a todas!"</p>
           </div>
-          <div className="depoimento">
-            <img src="https://via.placeholder.com/100" alt="Foto do usuário" />
-            <h3>Maria Souza</h3>
-            <p>"Incrível! Nunca vi um produto tão eficiente e fácil de usar."</p>
+          <div className="testimonial">
+            <img src="https://via.placeholder.com/100" alt="Mariana Silva" />
+            <h3>Mariana Silva</h3>
+            <p>"As estratégias e exercícios são incríveis. Foi um divisor de águas na minha vida."</p>
           </div>
-          <div className="depoimento">
-            <img src="https://via.placeholder.com/100" alt="Foto do usuário" />
-            <h3>Carlos Oliveira</h3>
-            <p>"Comprei e não me arrependi. Vale cada centavo!"</p>
+          <div className="testimonial">
+            <img src="https://via.placeholder.com/100" alt="Ana Costa" />
+            <h3>Ana Costa</h3>
+            <p>"Simplesmente transformador! O melhor investimento que já fiz em mim mesma."</p>
           </div>
         </div>
       </div>
@@ -145,21 +112,20 @@ const TestimonialsSection = () => {
   );
 };
 
-// CTASection.jsx
-const CTASection = () => {
+// Seção Mid-CTA: Chamada para ação exclusiva no meio da página
+const MidCTASection = () => {
   return (
-    <section id="cta">
+    <section id="mid-cta">
       <div className="container">
-        <h2>Pronto para experimentar?</h2>
-        <p>Não perca tempo, adquira já o seu!</p>
-        <a href="#" className="btn">Compre Agora</a>
-        <p className="garantia">✅ Garantia de 30 dias ou seu dinheiro de volta!</p>
+        <h2>Pronta para transformar sua vida?</h2>
+        <p>Não perca tempo e adquira o ebook que vai mudar sua história!</p>
+        <a href="#purchase" className="btn">Compre Agora</a>
       </div>
     </section>
   );
 };
 
-// FAQSection.jsx
+// Seção FAQ: Respostas às dúvidas mais comuns
 const FAQSection = () => {
   return (
     <section id="faq">
@@ -167,16 +133,18 @@ const FAQSection = () => {
         <h2>Perguntas Frequentes</h2>
         <div className="faq-list">
           <div className="faq-item">
-            <h3>O produto é fácil de usar?</h3>
-            <p>Sim, o [Nome do Produto] foi projetado para ser intuitivo e acessível para todos.</p>
+            <h3>O ebook é para mim?</h3>
+            <p>
+              Se você está passando por um término e quer se reerguer com força e autoconhecimento, este ebook é para você.
+            </p>
           </div>
           <div className="faq-item">
-            <h3>Qual é o prazo de entrega?</h3>
-            <p>O prazo de entrega é de até 7 dias úteis para todo o Brasil.</p>
+            <h3>Como recebo o ebook?</h3>
+            <p>Após a compra, você receberá o ebook diretamente no seu e-mail.</p>
           </div>
           <div className="faq-item">
-            <h3>Posso devolver se não gostar?</h3>
-            <p>Sim, oferecemos uma garantia de 30 dias para reembolso.</p>
+            <h3>Existe garantia?</h3>
+            <p>Sim! Oferecemos garantia de 30 dias para que você possa testar sem riscos.</p>
           </div>
         </div>
       </div>
@@ -184,38 +152,51 @@ const FAQSection = () => {
   );
 };
 
-// Footer.jsx
+// Seção CTA Final: Chamada para ação forte com o botão de compra
+const CTASection = () => {
+  return (
+    <section id="cta">
+      <div className="container">
+        <h2>Transforme sua Vida Hoje</h2>
+        <p>Adquira agora o seu ebook e comece sua jornada de superação!</p>
+        <a href="#purchase" className="btn">Comprar Agora</a>
+        <p className="garantia">✅ Garantia de 30 dias ou seu dinheiro de volta!</p>
+      </div>
+    </section>
+  );
+};
+
+// Rodapé da página
 const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <p>&copy; 2023 [Nome da Empresa]. Todos os direitos reservados.</p>
-        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
-        <div className="redes-sociais">
+        <p>&copy; 2025 [Seu Nome/Marca]. Todos os direitos reservados.</p>
+        <div className="social-links">
           <a href="#">Facebook</a>
           <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
         </div>
       </div>
     </footer>
   );
 };
 
-// App.jsx
+// Componente principal (App)
 const App = () => {
   return (
     <div>
       <CountdownTimer />
-      <Header />
-      <VideoSection />
-      <BenefitsSection />
+      <HeroSection />
+      <EbookSection />
+      <AboutSection />
       <TestimonialsSection />
-      <CTASection />
+      <MidCTASection />
       <FAQSection />
+      <CTASection />
       <Footer />
     </div>
   );
 };
 
-// Renderizar o App
 ReactDOM.render(<App />, document.getElementById('root'));
