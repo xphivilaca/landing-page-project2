@@ -41,6 +41,7 @@ const HeroSection = () => {
   );
 };
 
+// Seção do Ebook: Conteúdo e benefícios do produto
 const EbookSection = () => {
   return (
     <section id="ebook">
