@@ -29,12 +29,12 @@ const HeroSection = () => {
     <section id="hero">
       <div className="container">
         <div className="hero-content">
-          <h1>Supere o término e redescubra sua força.</h1>
+          <h1>Supere o Término e Redescubra sua Força</h1>
           <p>Transforme a dor da separação em um novo começo com nosso ebook exclusivo.</p>
-          <a href="#cta" className="btn">QUERO MEU EBOOKk</a>
+          <a href="#cta" className="btn">Quero Meu Ebook</a>
         </div>
         <div className="hero-image">
-          <img src="https://raw.githubusercontent.com/xphivilaca/landing-page-project2/refs/heads/main/img/capa.webp" alt="Capa do Ebook" />
+          <img src="https://via.placeholder.com/400x500.png?text=Capa+do+Ebook" alt="Capa do Ebook" />
         </div>
       </div>
     </section>
@@ -46,7 +46,7 @@ const EbookSection = () => {
   return (
     <section id="ebook">
       <div className="container">
-        <h2>O QUE VOCÊ VAI ENCONTRAR NO EBOOK</h2>
+        <h2>O Que Você Vai Encontrar no Ebook</h2>
         <ul className="ebook-benefits">
           <li>Dicas práticas para superar o término</li>
           <li>Exercícios para resgatar sua autoestima</li>
@@ -60,8 +60,6 @@ const EbookSection = () => {
     </section>
   );
 };
-
-export default EbookSection;
 
 // Seção Sobre: Apresenta a autora e gera autoridade
 const AboutSection = () => {
