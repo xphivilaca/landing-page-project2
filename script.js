@@ -34,7 +34,7 @@ const HeroSection = () => {
           <a href="#cta" className="btn">Quero Meu Ebook</a>
         </div>
         <div className="hero-image">
-          <img src="https://via.placeholder.com/400x500.png?text=Capa+do+Ebook" alt="Capa do Ebook" />
+          <img src="https://raw.githubusercontent.com/xphivilaca/landing-page-project2/refs/heads/main/img/capa.webp" alt="Capa do Ebook" />
         </div>
       </div>
     </section>
