@@ -96,18 +96,6 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.ebook-benefits {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.ebook-benefits li {
-  margin-bottom: 10px; /* ou o espaçamento que preferir */
-  text-align: justify;
-}
-
-
 /* EBOOK SECTION */
 #ebook {
   background: #fff;
